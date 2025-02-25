@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="/images/favicon.png"
+          alt="Logo of Just Weather"
+          class="header-img"
+        />
+        <span>Just Weather</span>
+        <form action="" id="FORM">
+          <input type="text" placeholder="Search city..." id="searchCity" />
+          <button id="search-btn" type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="city-forecast">
+        <div class="weather-flex-city">
+          <div>
+            <h5 id="cityName" class="city-h5">Madrid</h5>
+            <span id="city-temperature" class="city-temp1">16°</span>
+            <span id="city-temperature-low" class="city-temp2">-1°</span>
+          </div>
+          <img
+            src="/images/cloudy.png"
+            alt=""
+            class="city-forecast-img"
+            id="city-weather-img"
+          />
+        </div>
+      </div>
+
+      <div class="todays-forecast">
+        <h4 class="forecast-h4">TODAY'S FORECAST</h4>
+        <div class="forecast-flex" id="hourlyDiv"></div>
+      </div>
+
+      <div class="todays-forecast">
+        <h4 class="forecast-h4">WEEKLY FORECAST</h4>
+        <div class="forecast-flex">
+          <div class="forecast">
+            <h5>06:00</h5>
+            <img src="/images/sunny.png" alt="" class="weather-sunny-img" />
+            <span>10°</span>
+          </div>
+          <div class="forecast">
+            <h5>06:00</h5>
+            <img src="/images/sunny.png" alt="" class="weather-sunny-img" />
+            <span>10°</span>
+          </div>
+          <div class="forecast">
+            <h5>06:00</h5>
+            <img src="/images/sunny.png" alt="" class="weather-sunny-img" />
+            <span>10°</span>
+          </div>
+          <div class="forecast">
+            <h5>06:00</h5>
+            <img src="/images/sunny.png" alt="" class="weather-sunny-img" />
+            <span>10°</span>
+          </div>
+          <div class="forecast">
+            <h5>06:00</h5>
+            <img src="/images/sunny.png" alt="" class="weather-sunny-img" />
+            <span>10°</span>
+          </div>
+          <div class="forecast">
+            <h5>06:00</h5>
+            <img src="/images/sunny.png" alt="" class="weather-sunny-img" />
+            <span>10°</span>
+          </div>
+          <div class="forecast">
+            <h5>06:00</h5>
+            <img src="/images/sunny.png" alt="" class="weather-sunny-img" />
+            <span>10°</span>
+          </div>
+          <div class="forecast">
+            <h5>06:00</h5>
+            <img src="/images/sunny.png" alt="" class="weather-sunny-img" />
+            <span>10°</span>
+          </div>
+          <div class="forecast">
+            <h5>06:00</h5>
+            <img src="/images/sunny.png" alt="" class="weather-sunny-img" />
+            <span>10°</span>
+          </div>
+          <div class="forecast">
+            <h5>06:00</h5>
+            <img src="/images/sunny.png" alt="" class="weather-sunny-img" />
+            <span>10°</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="todays-weather">
+        <h4 class="weather-h4">WEATHER DETAILS</h4>
+        <div class="weather-flex-flex">
+          <div class="weather-flex">
+            <div>
+              <h5 class="sunrise-h5">Sunrise</h5>
+              <span id="sunriseTime">08:00</span>
+            </div>
+            <img src="/images/favicon.png" alt="" class="weather-details-img" />
+          </div>
+          <div class="weather-flex">
+            <div>
+              <h5 class="sunrise-h5">Sunset</h5>
+              <span id="sunsetTime">08:00</span>
+            </div>
+            <img src="/images/favicon.png" alt="" class="weather-details-img" />
+          </div>
+          <div class="weather-flex">
+            <div>
+              <h5 class="sunrise-h5">Chance of rain</h5>
+              <span id="cor">08:00</span>
+            </div>
+            <img src="/images/favicon.png" alt="" class="weather-details-img" />
+          </div>
+          <div class="weather-flex">
+            <div>
+              <h5 class="sunrise-h5">Pressure</h5>
+              <span id="pressure">08:00</span>
+            </div>
+            <img src="/images/favicon.png" alt="" class="weather-details-img" />
+          </div>
+        </div>
+        <div class="weather-flex-flex">
+          <div class="weather-flex">
+            <div>
+              <h5 class="sunrise-h5">Wind</h5>
+              <span id="wind">08:00</span>
+            </div>
+            <img src="/images/favicon.png" alt="" class="weather-details-img" />
+          </div>
+          <div class="weather-flex">
+            <div>
+              <h5 class="sunrise-h5">UV Index</h5>
+              <span id="uvIndex">08:00</span>
+            </div>
+            <img src="/images/favicon.png" alt="" class="weather-details-img" />
+          </div>
+          <div class="weather-flex">
+            <div>
+              <h5 class="sunrise-h5">Feels like</h5>
+              <span id="feelsLike">08:00</span>
+            </div>
+            <img src="/images/favicon.png" alt="" class="weather-details-img" />
+          </div>
+          <div class="weather-flex">
+            <div>
+              <h5 class="sunrise-h5">Visibility</h5>
+              <span id="visibility">08:00</span>
+            </div>
+            <img src="/images/favicon.png" alt="" class="weather-details-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

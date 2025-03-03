@@ -80,6 +80,11 @@ form input {
   margin-bottom: 5px;
 }
 
+.todays-forecast {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
 .todays-forecast,
 .todays-weather {
   margin: 15px 50px;

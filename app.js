@@ -78,8 +78,12 @@ form.addEventListener("submit", async function (e) {
   let feeling = document.getElementById("feelsLike");
   let visibility = document.getElementById("visibility");
 
-  sunrise.innerHTML = result.forecast.forecastday.astro.sunrise;
-  console.log(sunrise);
+  // for (const item of result.forecast.forecastday[0].astro.sunrise) {
+  sunrise.innerHTML = result.forecast.forecastday[0].astro.sunrise;
+  sunset.innerHTML = result.forecast.forecastday[0].astro.sunset;
+
+  //   console.log(item);
+  // }
 });
 
 // const searchButton = document.getElementById("search-btn");
